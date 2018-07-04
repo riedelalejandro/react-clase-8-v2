@@ -9,8 +9,6 @@ class GoogleMap extends Component {
   marker = null;
 
   componentDidMount() {
-    const { lat, lng } = this.props;
-
     // Creamos una nueva instancia de GoogleMaps para renderear en el div que tiene el ID "map"
     this.map = new google.maps.Map(document.getElementById('map'), {
       zoom: 15,
